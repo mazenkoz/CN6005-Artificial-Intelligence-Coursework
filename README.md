@@ -1,6 +1,6 @@
 # Artificial Intelligence Coursework
 
-Three applied AI projects built in Python on Google Colab as group coursework for **CN6005 Artificial Intelligence** at the University of East London (2026/27).
+Three applied AI projects written in Python as group coursework for **CN6005 Artificial Intelligence** at the University of East London (2026/27).
 
 | Task | Project | Methods | Key result |
 |---|---|---|---|
@@ -10,23 +10,24 @@ Three applied AI projects built in Python on Google Colab as group coursework fo
 
 ## Repository structure
 ```
-├── Task1_ImageClassification.ipynb   ANN vs CNN on the Flowers "Five Classes" dataset
-├── Task2_TextMining.ipynb            TF-IDF, K-Means and Sentence-BERT clustering of job adverts
-├── Task3_AIAgent.ipynb               Travel Information Agent (retrieval + LLM)
-├── scripts/                          Python script (.py) versions of the three notebooks
-├── datasets/links.txt                Dataset sources
-├── requirements.txt                  Python libraries
-└── README.txt                        How to run the code
+├── Task1_ImageClassification.py   ANN vs CNN on the Flowers "Five Classes" dataset
+├── Task2_TextMining.py            TF-IDF, K-Means and Sentence-BERT clustering of job adverts
+├── Task3_AIAgent.py               Travel Information Agent (retrieval + LLM)
+├── datasets/links.txt             Dataset sources
+├── requirements.txt               Python libraries
+└── README.txt                     How to run the code
 ```
 
 ## How to run
-1. Open a notebook in Google Colab (File → Open notebook → GitHub).
-2. Choose Runtime → Change runtime type → **T4 GPU**.
-3. Run Runtime → Run all. Datasets are downloaded automatically with kagglehub, and the Task 3 models are downloaded from Hugging Face.
-
-To run locally: `pip install -r requirements.txt`, then open the notebooks in Jupyter.
+```bash
+pip install -r requirements.txt
+python Task1_ImageClassification.py
+python Task2_TextMining.py
+python Task3_AIAgent.py            # add --chat to talk to the agent live
+```
+Datasets are downloaded automatically with kagglehub (a free Kaggle account/API token is needed), and the Task 3 models are downloaded from Hugging Face. Figures are saved to a `screenshots/` folder. A GPU is recommended for Tasks 1 and 3.
 
 ## Datasets
 - [Flowers "Five Classes" (Kaggle, lara311)](https://www.kaggle.com/datasets/lara311/flowers-five-classes)
 - [Real / Fake Job Posting Prediction (Kaggle, Shivam Bansal)](https://www.kaggle.com/datasets/shivamb/real-or-fake-fake-jobposting-prediction)
-- Task 3 knowledge base: 26 travel entries written by the group (inside `Task3_AIAgent.ipynb`)
+- Task 3 knowledge base: 26 travel entries written by the group (inside `Task3_AIAgent.py`)
