@@ -1,0 +1,18 @@
+# Task 1
+kagglehub
+numpy
+pandas
+matplotlib
+seaborn
+pillow
+scikit-learn
+tensorflow
+
+# Task 2
+nltk
+sentence-transformers
+
+# Task 3
+transformers
+accelerate
+torch
