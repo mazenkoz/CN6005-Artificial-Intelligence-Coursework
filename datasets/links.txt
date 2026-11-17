@@ -1,0 +1,10 @@
+Task 1 - Flowers "Five Classes" (lara311, Kaggle):
+https://www.kaggle.com/datasets/lara311/flowers-five-classes
+
+Task 2 - Real / Fake Job Posting Prediction (Shivam Bansal, Kaggle):
+https://www.kaggle.com/datasets/shivamb/real-or-fake-fake-jobposting-prediction
+
+Task 3 - Knowledge base of 26 travel entries (London, Paris, Rome, Barcelona, Amsterdam),
+defined inside Task3_AIAgent.ipynb (section 3.1.1).
+Sentence-BERT model: sentence-transformers/all-MiniLM-L6-v2 (Hugging Face)
+LLM: Qwen/Qwen2.5-1.5B-Instruct (Hugging Face): https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
